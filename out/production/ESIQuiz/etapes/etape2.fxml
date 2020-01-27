@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="610.0" prefWidth="1000.0" styleClass="Pane" stylesheets="@style2.css" xmlns="http://javafx.com/javafx/8.0.999-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="etapes.Etape2">
+   <children>
+      <Button fx:id="suivant" layoutX="855.0" layoutY="519.0" mnemonicParsing="false" onAction="#pressSuivant" prefHeight="36.0" prefWidth="105.0" styleClass="btnSuiv" stylesheets="@style1.css" text="Suivant" textFill="#359e95" />
+   </children>
+</AnchorPane>

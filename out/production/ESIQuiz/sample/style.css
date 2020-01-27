@@ -1,0 +1,14 @@
+.root
+{
+    -fx-background-image: url('landingPage.png');
+    -fx-background-size:cover;
+}
+.btn
+{
+    -fx-background-color: 'transparent';
+
+
+}
+.btn:hover{
+
+}

@@ -1,0 +1,29 @@
+.Pane
+{
+    -fx-background-image: url('background2.png');
+    -fx-background-size: cover;
+
+}
+
+.text-area, .text-area .viewport, .text-area .content
+{
+    -fx-background-color: transparent ;
+}
+.text-area
+{
+    -fx-text-fill: '#535151';
+}
+.btnCnx
+{
+     -fx-background-color: '#11D1BD';
+
+     -fx-border-radius: 30px;
+}
+
+.btnSuiv
+{
+    -fx-background-radius: 30px;
+    -fx-border-radius: 30px;
+    -fx-background-color: transparent ;
+    -fx-border-color: '#11D1BD';
+}

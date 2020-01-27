@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="612.0" prefWidth="1000.0" styleClass="Pane" stylesheets="@style1.css" xmlns="http://javafx.com/javafx/8.0.999-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="etapes.ControllerFormation">
+   <children>
+      <TextField fx:id="nom" layoutX="625.0" layoutY="211.0" prefHeight="36.0" prefWidth="326.0" promptText="Nom de la formation" />
+      <TextField fx:id="description" layoutX="626.0" layoutY="346.0" prefHeight="133.0" prefWidth="326.0" promptText="Description de la formation " />
+      <DatePicker fx:id="dateDebut" layoutX="625.0" layoutY="256.0" prefHeight="36.0" prefWidth="326.0" promptText="Debut de la formation" />
+      <DatePicker fx:id="dateFin" layoutX="625.0" layoutY="301.0" prefHeight="36.0" prefWidth="326.0" promptText="Fin de la formation" />
+      <TextArea layoutX="600.0" layoutY="137.0" prefHeight="75.0" prefWidth="374.0" text="Description de la formation">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </TextArea>
+      <Line endX="2.41754150390625" layoutX="721.0" layoutY="185.0" startX="-100.0" stroke="#6f6c6cf0" strokeWidth="3.0" />
+      <Text fill="#979292" layoutX="446.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text=",">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Button fx:id="suivant" layoutX="848.0" layoutY="505.0" mnemonicParsing="false" onAction="#pressSuivant" prefHeight="36.0" prefWidth="105.0" styleClass="btnSuiv" stylesheets="@style1.css" text="Suivant" textFill="#359e95" />
+   </children>
+</AnchorPane>

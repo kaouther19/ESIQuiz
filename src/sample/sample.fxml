@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="936.0" prefWidth="1398.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.999-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Button fx:id="formateur" layoutX="230.0" layoutY="333.0" mnemonicParsing="false" onAction="#pressFormateur" prefHeight="36.0" prefWidth="160.0" styleClass="btn" stylesheets="@style.css" text="Formateur" textFill="#000000d1">
+         <font>
+            <Font name="Arial Narrow Bold" size="22.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="apprenant" layoutX="427.0" layoutY="333.0" mnemonicParsing="false" onAction="#pressApprenant" styleClass="btn" stylesheets="@style.css" text="Apprenant" textFill="#000000d1">
+         <font>
+            <Font name="Arial Narrow Bold" size="22.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Line layoutX="290.0" layoutY="371.0" startX="40.0" stroke="#11d1bd" strokeWidth="2.0" />
+      <Line layoutX="469.0" layoutY="371.0" startX="40.0" stroke="#11d1bd" strokeWidth="2.0" />
+      <ImageView fx:id="test" fitHeight="150.0" fitWidth="200.0" layoutY="504.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

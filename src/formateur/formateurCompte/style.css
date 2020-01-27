@@ -1,0 +1,16 @@
+.border
+{
+    -fx-effect: dropshadow(three-pass-box, black, 10, 0, 0, 0);
+}
+.btn
+{
+    -fx-background-color: 'transparent';
+}
+.sideBar
+{
+    -fx-effect: dropshadow(three-pass-box, grey, 20,0, 0, 0);
+}
+.text-area, .text-area .viewport, .text-area .content
+{
+    -fx-background-color: transparent ;
+}

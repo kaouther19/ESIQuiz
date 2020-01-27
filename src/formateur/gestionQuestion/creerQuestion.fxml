@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="464.0" prefWidth="554.0" style="-fx-background-color: #E2E0E0;" xmlns="http://javafx.com/javafx/8.0.999-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="formateur.gestionQuestion.CreerQuestion">
+   <children>
+      <Label layoutX="51.0" layoutY="25.0" prefHeight="37.0" prefWidth="274.0" text="Création de la question" textFill="#464545">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <TextField fx:id="text" layoutX="36.0" layoutY="71.0" prefHeight="44.0" prefWidth="472.0" promptText="Text de la question" />
+      <Label layoutX="46.0" layoutY="125.0" prefHeight="27.0" prefWidth="274.0" text="Type de question" textFill="#454444d5">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="227.0" prefHeight="27.0" prefWidth="274.0" text="Propositions" textFill="#454444d5">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nbProp" layoutX="36.0" layoutY="259.0" prefHeight="44.0" prefWidth="472.0" promptText="Nombre de proposition" />
+      <TextField fx:id="nbPropJ" layoutX="36.0" layoutY="316.0" prefHeight="44.0" prefWidth="472.0" promptText="Nombre de proposition justes" />
+      <Label layoutX="320.0" layoutY="391.0" prefHeight="27.0" prefWidth="148.0" text="Ajout des propositions" textFill="#598d77" />
+      <VBox layoutX="46.0" layoutY="151.0" prefHeight="83.0" prefWidth="100.0">
+         <children>
+            <RadioButton fx:id="QCM" mnemonicParsing="false" onAction="#choisir" text="QCM">
+               <VBox.margin>
+                  <Insets bottom="4.0" top="4.0" />
+               </VBox.margin>
+               <toggleGroup>
+                  <ToggleGroup fx:id="type" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="QCU" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#choisir" text="QCU" toggleGroup="$type">
+               <VBox.margin>
+                  <Insets bottom="4.0" />
+               </VBox.margin>
+            </RadioButton>
+            <RadioButton fx:id="QO" layoutX="10.0" layoutY="28.0" mnemonicParsing="false" onAction="#choisir" text="QO" toggleGroup="$type">
+               <VBox.margin>
+                  <Insets top="3.0" />
+               </VBox.margin>
+            </RadioButton>
+         </children>
+      </VBox>
+      <ImageView fitHeight="60.0" fitWidth="59.0" layoutX="455.0" layoutY="378.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../gestionNotions/ajout/right-arrow-3.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="creer" layoutX="459.0" layoutY="375.0" mnemonicParsing="false" onAction="#creerQuestion" prefHeight="67.0" prefWidth="59.0" style="-fx-background-color: transparent;" />
+   </children>
+</AnchorPane>
